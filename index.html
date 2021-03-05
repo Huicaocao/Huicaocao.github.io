@@ -6,16 +6,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="hi，我是灰草草。">
-        <!--description,描述，可以在网页搜索中定义到-->
-    <meta http-equiv="refresh" content="3;http://www.baidu.com">
-
+        <!--<meta name="Description" content="hi，我是灰草草。">
+            description,描述，可以在网页搜索中定义到-->
+            <!--<meta http-equiv="refresh" content="3;网址">这是一个跳转的定义：意为几秒之后跳转至“网址”
+                <meta name="Keywords" content="灰草草,奇幻,写作,小说" />这与上面的类似，但定义的是关键词，且因为GitHub屏蔽了百度爬虫，所以不主动提交是搜不到的（谷歌同理）-->
     <title>灰草草</title><!--这是一个标题，用以显示在浏览器的标签页上-->
         <style>
 
         h2.intro
         {
             color: rgba(165, 42, 42, 0.5);
+            text-align:center;
         }
         p.text
         {
@@ -24,6 +25,10 @@
         h4.poem
         {
             color:rgba(15, 87, 105, 0.534)
+        }
+        p.flower
+        {
+            text-align:center;
         }
         </style>
 </head>
@@ -47,7 +52,10 @@
                                 我只是爱上了约翰的莎乐美。<br/>
                             </p>
                         </blockquote><!--引用需要放在被定义过的样式之外-->
-<body>
-    
+                <body link="red" alink="blue" vlink="green">    
+                    <p class="flower">
+                        <a href="#">🌼这是一朵可以疯狂点击用以解压（也许）的小发发🌼</a>
+                    </p>
+                </body>
 </body>
 </html>
