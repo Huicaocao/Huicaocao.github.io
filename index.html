@@ -5,12 +5,10 @@
             <base>, <link>, <meta>, <script>, <style>, 以及 <title>（它是必需有的，因为它将在页面展示）。这些被描述的标签不会展示给阅读者，只是作为数据记录。-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<meta name="Description" content="hi，我是灰草草。">
-            description,描述，可以在网页搜索中定义到-->
-            <!--<meta http-equiv="refresh" content="3;网址">这是一个跳转的定义：意为几秒之后跳转至“网址”
-                <meta name="Keywords" content="灰草草,奇幻,写作,小说" />这与上面的类似，但定义的是关键词，且因为GitHub屏蔽了百度爬虫，所以不主动提交是搜不到的（谷歌同理）-->
+        <!--<meta name="Description" content="hi，我是灰草草。"，description,描述，可以在网页搜索中定义到，<meta http-equiv="refresh" content="3;网址">这是一个跳转的定义：意为几秒之后跳转至“网址”，meta name="Keywords" content="灰草草,奇幻,写作,小说" />这与上面的类似，但定义的是关键词，且因为GitHub屏蔽了百度爬虫，所以不主动提交是搜不到的（谷歌同理）-->
+    <!--字体-->
+
     <title>灰草草</title><!--这是一个标题，用以显示在浏览器的标签页上-->
-    @font
         <style>
         h2.intro
         {
@@ -25,14 +23,55 @@
         {
             color:darkgray;
         }
-        </style>
+        img.题头图片
+        {
+            vertical-align:text-top;
+        } 
+        p.name1
+        {
+            text-align:center;
+        }
+        div.题头对齐
+        {
+            text-align: center;
+        }
+        span.介绍对齐
+        {
+            text-align:left;
+            color: cadetblue;
+        }
+        </style><!--style里不能再含style，这是h4-->
 </head>
 <hr />
 <body><!--表示文档内容-->
     <h2 class="intro">
         欢迎，远归人。
     </h2>
-    <pre>
+<hr />
+    <p class="name1"><a name="name1">原野正在缄默燃烧。</a></p>
+    <br />
+    <div class="题头对齐">
+        <img class="题头图片" src="./img/题头图片.PNG" width="150" height="150" 
+            title="哦！你发现了一个小彩蛋！
+                    送你一朵小发发❀" />
+        <br />
+    </div>
+            <span class="介绍对齐">
+                <blockquote>嗨，我是灰草草。<br />
+                一株十八线写奇幻的咸草科植物🌱<br />
+                </blockquote>
+            </span>
+    
+<hr />
+        <ul>
+            <li>🔮奇幻的终身爱好者📜</li>
+                <ul type=circle>
+                    <li>🌊脑洞极多，时速六百。</li>
+                    <li>🎠兴趣广泛，啥都想玩。</li>
+                </ul>
+            <li>🐕喜欢毛茸茸🐈</li>
+            <li>在写了.jpg</li>
+                </ul>    
     <body>
         <ul type="circle"><h5 class="目录">
                 <li><a href="目录1.html">《那是一日》</a></li>
@@ -47,7 +86,7 @@
         <hr />
         <body link="red" alink="blue" vlink="green">    
             <p class="flower">
-                <a href="#">🌼回到顶端🌼</a><!--出现问题，为什么不显示红色，现在原因不知，但估计是有什么覆盖了【留待解决】-->
+                <a href="#name1">✨回到顶端✨</a><!--显示了红色，只有第一次点击时-->
             </p>
         </body>
 </body>
