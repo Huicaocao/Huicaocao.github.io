@@ -6,88 +6,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--<meta name="Description" content="hi，我是灰草草。"，description,描述，可以在网页搜索中定义到，<meta http-equiv="refresh" content="3;网址">这是一个跳转的定义：意为几秒之后跳转至“网址”，meta name="Keywords" content="灰草草,奇幻,写作,小说" />这与上面的类似，但定义的是关键词，且因为GitHub屏蔽了百度爬虫，所以不主动提交是搜不到的（谷歌同理）-->
-    <!--字体-->
-
+    <!--字体，一般来给电脑安装的字体并不能直接使用-->
     <title>灰草草</title><!--这是一个标题，用以显示在浏览器的标签页上-->
-        <style>
-        h2.intro
+            <!--可以见到style与style type的作用是一样的-->
+        <style type="text/css">
+		@font-face
         {
-            color: rgba(8, 57, 85, 0.692);
-            text-align:center;
+			font-family: '网页使用-字体';
+			src:url('./fonts/SourceHanSerifCN-Regular.otf');
         }
-        p.flower
+        @font-face
         {
-            text-align:center;
+            font-family: '网页使用-标题字体';
+			src:url('./fonts/SourceHanSerifCN-Heavy.otf');
         }
-        h5.目录
-        {
-            color:darkgray;
-        }
-        img.题头图片
-        {
-            vertical-align:text-top;
-        } 
-        p.name1
-        {
-            text-align:center;
-        }
-        div.题头对齐
-        {
-            text-align: center;
-        }
-        span.介绍对齐
-        {
-            text-align:left;
-            color: cadetblue;
-        }
+            div.封装整体
+            {
+                padding-top:20px;
+                font-family:'网页使用-字体';
+                font-size: 1.2em;
+            }
+            h1.intro
+            {
+                color: rgba(8, 57, 85, 0.692);
+                text-align:center;
+                font-size:150%;
+                font-family:'网页使用-标题字体';
+            }
+            div.bottom
+            {
+                text-align:center;
+            }
+            h5.目录
+            {
+                color:darkgray;
+            }
+            p.name1
+            {
+                text-align:center;
+            }
+            div.题头对齐
+            {
+                text-align: center;
+            }
+            span.介绍对齐
+            {
+                text-align:left;
+                color: cadetblue;
+            }
+
         </style><!--style里不能再含style，这是h4-->
 </head>
-<hr />
 <body><!--表示文档内容-->
-    <h2 class="intro">
-        欢迎，远归人。
-    </h2>
-<hr />
-    <p class="name1"><a name="name1">原野正在缄默燃烧。</a></p>
-    <br />
-    <div class="题头对齐">
-        <img class="题头图片" src="./img/题头图片.PNG" width="150" height="150" 
-            title="哦！你发现了一个小彩蛋！
-                    送你一朵小发发❀" />
+    <div class="封装整体"><!--真是完美的一天！今天明白了层级和简单的div\span以及字体引用的关系！-->
+        <h1 class="intro">
+            欢迎，远归人。
+        </h1>
         <br />
-    </div>
-            <span class="介绍对齐">
-                <blockquote>嗨，我是灰草草。<br />
-                一株十八线写奇幻的咸草科植物🌱<br />
-                </blockquote>
-            </span>
-    
-<hr />
-        <ul>
-            <li>🔮奇幻的终身爱好者📜</li>
-                <ul type=circle>
-                    <li>🌊脑洞极多，时速六百。</li>
-                    <li>🎠兴趣广泛，啥都想玩。</li>
-                </ul>
-            <li>🐕喜欢毛茸茸🐈</li>
-            <li>在写了.jpg</li>
-                </ul>    
-    <body>
-        <ul type="circle"><h5 class="目录">
-                <li><a href="目录1.html">《那是一日》</a></li>
-                <li><a href="目录2.html">静谧之所</a></li>
-                <li>《红夜》</li>
-                <li></li>
-                <li></li>
-            </ul>
-        </h5>
-    </body>
-
+        <div class="题头对齐">
+            <img class="题头图片" src="./img/题头图片.PNG" width="150" height="150" 
+                title="哦！你发现了一个小彩蛋！
+                        送你一朵小发发❀" />
+            <br />
+        </div>
         <hr />
-        <body link="red" alink="blue" vlink="green">    
-            <p class="flower">
-                <a href="#name1">✨回到顶端✨</a><!--显示了红色，只有第一次点击时-->
-            </p>
+        <p class="name1"><a name="name1">原野正在缄默燃烧。</a></p>
+                <span class="介绍对齐">
+                    <blockquote>嗨，我是灰草草。<br />
+                    一株十八线写奇幻的咸草科植物🌱<br />
+                    </blockquote>
+                </span>
+        
+<hr />
+        <div >
+            <ul>
+                <li>🔮奇幻的终身爱好者📜</li>
+                    <ul type=circle>
+                        <li>🌊脑洞极多，时速六百。</li>
+                        <li>🎠兴趣广泛，啥都想玩。</li>
+                    </ul>
+                <li>🐕喜欢毛茸茸🐈</li>
+                <li>在写了.jpg</li>
+                    </ul>
+        </div>
+        <body>
+            <ul type="circle"><h5 class="目录">
+                    <li><a href="./doc/目录1.html">《那是一日》</a></li>
+                    <li><a href="./doc/目录2.html">静谧之所</a></li>
+                    <li>《红夜》</li>
+                    <li><a href="./doc/文档.md">哈哈</a></li>
+                    <li>关于我。</li>
+                </ul>
+            </h5>
+        </body>
+<hr />
+            <body link="red" alink="blue" vlink="green">    
+                <div class="bottom">
+                    <a href="#name1">✨回到顶端✨</a><!--显示了红色，只有第一次点击时-->
+                </div>
+    </div>
         </body>
 </body>
 </html>
