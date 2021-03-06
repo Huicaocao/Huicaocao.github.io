@@ -3,11 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Today</title>
-            <style>
+            <style type="text/css">
             @font-face
             {
                 font-family: '网页使用-字体';
                 src: url('./fonts/SourceHanSerifCN-Regular.otf');
+            }
+            @font-face
+            {
+                font-family: '网页使用-标题字体';
+			    src:url('./fonts/SourceHanSerifCN-Heavy.otf');
             }
                 div.封装整体
                 {
@@ -16,7 +21,7 @@
                     font-family:'网页使用-字体';
 
                 }
-                h4.poem
+                h4.标题
                 {
                     font-family:'网页使用-字体';
                 }   
@@ -33,9 +38,10 @@
 </head>
 <body>
     <div class="封装整体">
-        <h4 class="poem">
-        <b><i>《那是一日》</i></b>
-        </h4>
+        <br />
+            <h4 class="标题">
+                《那是一日》
+            </h4>
             <blockquote>
                 <p class="text">
                     你同我微笑，我却妒忌爱欲，憎恨失望，我白瓷的面容皲裂，刻下一片闪电的丛林。<br/>
@@ -48,11 +54,12 @@
                     爱上了约翰的莎乐美。<br/>
                 </p>
             </blockquote><!--引用需要放在被定义过的样式之外-->
+    </div>
         <div class="link跳转">
             <body link="red" alink="blue" vlink="green">    
                 <a href="/index.html">✨回到目录✨</a>
             </body>   
         </div>
-    </div>
+
 </body>
 </html>
